@@ -43,7 +43,7 @@ describe BankAccount do
     expect(savings.balance).to eq 100.0
   end
 
-  xit '6. can verify account details' do
+  it '6. can verify account details' do
     checking = BankAccount.new(123, '0987', 250.0)
     savings = BankAccount.new(567, '2468', 500.0)
     id = 123; pin = '0987'

@@ -21,6 +21,6 @@ class BankAccount
   end
 
   def verify?(id, pin)
-
+    id == @account_number && pin == @secret_code
   end
 end
