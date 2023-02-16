@@ -24,14 +24,14 @@ describe BankAccount do
     expect(checking.balance).to eq 350.0
   end
 
-  xit '4. can withdraw money' do
+  it '4. can withdraw money' do
     checking = BankAccount.new(123, '0987', 250.0)
     checking.withdraw(55.0)
 
     expect(checking.balance).to eq 195.0
   end
 
-  xit '5. cannot overdraw account' do
+  it '5. cannot overdraw account' do
     checking = BankAccount.new(123, '0987', 250.0)
     checking.withdraw(255.0)
     expect(checking.balance).to eq 250.0
